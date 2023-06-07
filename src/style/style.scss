@@ -56,7 +56,6 @@ $theme-color: orange;
   &__controls {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
   }
 
   &__btn {
@@ -64,6 +63,7 @@ $theme-color: orange;
     margin: 10px;
     background-color: $theme-color;
     color: white;
+    font-weight: bold;
     border-radius: 10px;
     border: 1px solid darken($theme-color, 30%);
     transition: scale 0.3s ease-in-out;
