@@ -1,14 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "./style/style.css";
 
 import { TenClass } from "../src/js/tenClassComp.js";
 import { TenFunc } from "../src/js/tenFuncComp.js";
 
-ReactDOM.render(
+const root = document.getElementById("app");
+
+createRoot(root).render(
   <section className="counter">
     <TenClass />
     <TenFunc />
-  </section>,
-  document.getElementById("app")
+  </section>
 );
