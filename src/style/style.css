@@ -1,15 +1,15 @@
-@import url("normalize.css");
+@import url("./normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 .counter {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-family: "Roboto";
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+  background: linear-gradient(to bottom left, orange 0%, white 50%, orange 100%);
 }
 .counter__app {
   display: flex;
@@ -17,8 +17,8 @@
   justify-content: space-between;
   align-items: center;
   width: 350px;
-  height: 250px;
-  background-color: #fff;
+  min-height: 250px;
+  background-color: #fff6e6;
   margin: 30px;
   padding: 25px;
   border-radius: 15px;
@@ -27,6 +27,7 @@
 .counter__title {
   font-family: "Roboto";
   text-align: center;
+  margin-bottom: 10px;
 }
 .counter__flag {
   width: 100px;
@@ -37,12 +38,14 @@
   text-align: center;
   line-height: 100px;
   font-family: "Poppins";
+  letter-spacing: 2px;
   font-weight: bold;
   font-size: 40px;
 }
 .counter__controls {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .counter__btn {
   padding: 7px 12px;

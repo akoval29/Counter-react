@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
-export const TenFunc = (props) => {
+export const TenFunc = () => {
   let [ten, setTenValue] = useState(10);
   function changeTenValue(i) {
     setTenValue((ten) => ten + i);
   }
   function randomValue() {
-    setTenValue((ten) => Math.floor(Math.random() * 50));
+    setTenValue(() => Math.floor(Math.random() * 99));
   }
   function resetValue() {
-    setTenValue((ten) => 10);
+    setTenValue(() => 10);
   }
 
   return (

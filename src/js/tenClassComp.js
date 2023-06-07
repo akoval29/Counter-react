@@ -29,7 +29,7 @@ export class TenClass extends React.Component {
   };
   randomStep = () => {
     this.setState({
-      ten: Math.floor(Math.random() * 50),
+      ten: Math.floor(Math.random() * 99),
     });
   };
 
